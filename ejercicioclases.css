@@ -1,0 +1,24 @@
+#container {
+  display: grid;
+  grid-template-columns: 1fr repeat (3, 2fr);
+  grid-template-rows: 100px 200px 200px 200px
+    100 px ;;
+grid-template-areas:
+"header header header header"
+"sidebar main main main"
+"sidebar main main main"
+"sidebar main main main"
+"footer footer footer footer";
+gap: 2px;
+}
+
+
+#navbar {
+grid-area: header; 
+background-color: cadetblue;
+}
+
+nav>ul>li {
+display: inline-block;
+margin: 0 10px;
+}
