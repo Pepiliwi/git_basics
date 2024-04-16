@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  transition: 0.35s ease;
+}
+.rela-block {
+  display: block;
+  position: relative;
+  margin: auto;
+  top: ;
+  left: ;
+  right: ;
+  bottom: ;
+}
+
