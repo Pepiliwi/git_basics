@@ -12,3 +12,42 @@
   bottom: ;
 }
 
+.floated {
+  display: inline-block;
+  position: relative;
+  margin: false;
+}
+.abs-center {
+  display: false;
+  position: absolute;
+  margin: false;
+  top: 50%;
+  left: 50%;
+  right: false;
+  bottom: false;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 88%;
+}
+
+
+
+
+.top-bar {
+  height: 220px;
+  background-color: #032550;
+  color: #fff;
+}
+
+.side-bar {
+  display: false;
+  position: absolute;
+  margin: false;
+  top: 60px;
+  left: 5%;
+  right: false;
+  bottom: 0;
+  width: 350px;
+  background-color: #edf7fe;
+  padding: 320px 30px 50px;
+}
