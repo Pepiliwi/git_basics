@@ -73,6 +73,16 @@ body{
   text-align: left;
   margin-bottom: 5px;
 }
+/* Estilos del subtítulo */
+.subtitulo {
+  font-family: 'open sans';
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  line-height: 28px;
+  border-bottom: 1px solid #888;
+  margin-top: 40px;
+}
 /* Estilos del contenedor de LinkedIn */
 .div-linkedin {
   display: flex; 
