@@ -65,14 +65,27 @@ body{
   font-family: 'arial';
   font-size: 14px;
 }
-
-
-
-
-
-
-
-
-
-
-
+/* Estilos del contenedor de LinkedIn */
+.div-linkedin {
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  margin-left: -4px; /* Mueve el logo hacia la izquierda */
+  margin-top: 2px; /* Mueve el logo hacia arriba */
+}
+/* Estilos del contenedor de Instagram */
+.div-instagram {
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  margin-left: -6px; /* Mueve el logo hacia la izquierda */
+  margin-top: 2px; /* Mueve el logo hacia arriba */
+}
+/* Estilos del contenedor de GitHub */
+.div-github {
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  margin-left: -4px; /* Mueve el logo hacia la izquierda */
+  margin-top: 1px; /* Mueve el logo hacia arriba */
+}
