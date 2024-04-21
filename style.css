@@ -1,53 +1,21 @@
-* {
-  box-sizing: border-box;
-  transition: 0.35s ease;
+body{
+  background-color: #ededed;
 }
-.rela-block {
-  display: block;
-  position: relative;
-  margin: auto;
-  top: ;
-  left: ;
-  right: ;
-  bottom: ;
+.div-principal{
+  max-width: 900px;
+  width: 100%;
+  margin: 20px auto;
+  margin-bottom: 100px;
+  background-color: #fff;
+  display: flex;
+
+
 }
-
-.floated {
-  display: inline-block;
-  position: relative;
-  margin: false;
-}
-.abs-center {
-  display: false;
-  position: absolute;
-  margin: false;
-  top: 50%;
-  left: 50%;
-  right: false;
-  bottom: false;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 88%;
-}
-
-
-
-
-.top-bar {
-  height: 220px;
+.panel-superior {
+  max-width: 900px;
+  width: 100%;
   background-color: #032550;
   color: #fff;
+
 }
 
-.side-bar {
-  display: false;
-  position: absolute;
-  margin: false;
-  top: 60px;
-  left: 5%;
-  right: false;
-  bottom: 0;
-  width: 350px;
-  background-color: #edf7fe;
-  padding: 320px 30px 50px;
-}
