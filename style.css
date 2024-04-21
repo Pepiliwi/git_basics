@@ -10,6 +10,8 @@ body{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  box-shadow: 0px 0px 31px -7px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 31px -7px rgba(0,0,0,0.75);
 
 }
 .panel-superior {
@@ -22,6 +24,9 @@ body{
   width: 250px;
   background-color: #edf7fe;
   padding: 0px 20px 20px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
