@@ -88,4 +88,14 @@ body {
     text-decoration: none;
     color: #000;
   }
+  .social-icons {
+    font-size: 40px; /* adjust the font size to your liking */
+    margin: 10px; /* add some margin around the icon */
+    vertical-align: middle; /* center the icon vertically */
+    cursor: pointer; /* change the cursor to a pointer on hover */
+    color: #032550;
+  }
   
+  .github-icon:hover {
+    transform: scale(1.2); /* scale the icon up on hover */
+  }
