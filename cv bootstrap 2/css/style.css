@@ -1,0 +1,110 @@
+body {
+    background-color: #ededed;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+ .container {
+    max-width: 900px;
+  }
+  
+ .separator {
+    width: 300px;
+    height: 5px;
+    background-color: #edf7f5;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+  }
+  
+ .bg-light {
+    background-color: #edf7fe!important;
+  }
+  
+ .text-uppercase {
+    text-transform: uppercase;
+  }
+  
+ .fw-bold {
+    font-weight: bold;
+  }
+  
+ .card-subtitle {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+ .card-text {
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: justify;
+    text-decoration: none;
+  }
+  
+ .list-unstyled li {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+ .name-frame {
+    background-color: #032550;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 6px;
+    font-size: 18px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 767px) {
+   .col-md-4 {
+      order: 2;
+}
+  
+    .col-md-8 {
+      order: 1;
+    }
+  }
+
+  body {
+    background-color: #ffffff;
+  }
+
+  .shadow {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .expertiz-hobbies-educacion {
+    color: #032550;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .bg-perfil-experiencia {
+    background-color: #edf7f5;
+    padding: 10px 0;
+    border-radius: 5px;
+  }
+
+  h2 a{
+    text-decoration: none;
+    color: #000;
+  }
+
+  .social-icons {
+    font-size: 40px; /* adjust the font size to your liking */
+    margin: 10px; /* add some margin around the icon */
+    vertical-align: middle; /* center the icon vertically */
+    cursor: pointer; /* change the cursor to a pointer on hover */
+    color: #032550;
+  }
+
+  .release-manager-heading {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 4rem;
+    color: #000000; /* add a red color */
+  }
+
+  
