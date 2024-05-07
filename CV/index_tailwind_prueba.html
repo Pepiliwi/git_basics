@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Menu</title>
+    <!-- Link a Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Oculta el menú en pantallas pequeñas */
+        .hidden-mobile {
+            display: none;
+        }
+        /* Ajusta el margen superior del menú desplegable */
+        .dropdown-menu {
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-8">
+    <!-- Contenedor del menú y las cajas -->
+    <div class="max-w-md mx-auto">
+        <!-- Menú principal -->
+        <nav class="flex justify-between items-center">
+            <!-- Logo o título del sitio -->
+            <a href="#" class="font-bold text-xl">MySite</a>
+            <!-- Menú desplegable en pantallas pequeñas -->
+            <div class="md:hidden">
+                <!-- Botón de menú -->
+                <button id="menuBtn" class="text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900" aria-label="Abrir menú">
+                    <!-- Icono de hamburguesa -->
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Menú principal en pantallas grandes -->
+            <ul id="mainMenu" class="hidden md:flex space-x-4">
+                <!-- Opción del menú -->
+                <li><a href="#" class="text-gray-700 hover:text-gray-900">Pokemon</a></li>
+                <!-- Opción del menú -->
+                <li><a href="#" class="text-gray-700 hover:text-gray-900">Digimon</a></li>
+                <!-- Opción del menú -->
+                <li><a href="#" class="text-gray-700 hover:text-gray-900">One Piece</a></li>
+            </ul>
+        </nav>
+        <!-- Menú desplegable en pantallas pequeñas -->
+        <div id="dropdownMenu" class="md:hidden mt-2 hidden-mobile dropdown-menu">
+            <!-- Contenedor del menú desplegable -->
+            <div class="bg-white shadow-md rounded-md">
+                <!-- Opciones del menú desplegable -->
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Pokemon</a>
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Digimon</a>
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">One Piece</a>
+            </div>
+        </div>
+        <!-- Cajas separadas rellenas con texto -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+            <div class="bg-white p-4 rounded-md shadow-md">
+                <h2 class="text-lg font-semibold">Caja 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="bg-white p-4 rounded-md shadow-md">
+                <h2 class="text-lg font-semibold">Caja 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="bg-white p-4 rounded-md shadow-md">
+                <h2 class="text-lg font-semibold">Caja 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Obtiene los elementos del menú
+        const mainMenu = document.getElementById('mainMenu');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+        const menuBtn = document.getElementById('menuBtn');
+
+        // Función para mostrar u ocultar el menú desplegable
+        function toggleDropdownMenu() {
+            dropdownMenu.classList.toggle('hidden-mobile');
+        }
+
+        // Agrega un evento de clic al botón de menú para alternar la visibilidad del menú desplegable
+        menuBtn.addEventListener('click', toggleDropdownMenu);
+    </script>
+</body>
+</html>
